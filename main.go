@@ -101,7 +101,7 @@ func writeConfig(dest string, con []byte, ow bool) (string, error) {
 		return "", err
 	}
 
-	f, err := os.Create("server.json")
+	f, err := os.Create(path)
 	if err != nil {
 		fmt.Println(err)
 		return "", err
